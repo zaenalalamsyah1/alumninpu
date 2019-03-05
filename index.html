@@ -8,7 +8,25 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
+  <!-- Slick -->
+
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+  // Add the new slick-theme.css if you want the default styling
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+
   <title>Portal Alumni Universitas Nusa Putra</title>
+
+  <style>
+  .slick-prev:before, .slick-next:before {
+   color: #A61396;
+ }
+
+  .your-class > .slick-prev:before, .your-class> .slick-next:before {
+   color: white;
+ }
+
+</style>
 </head>
 <body>
 
@@ -268,13 +286,92 @@
   </div>
 </div>
 </div>
-
 <!-- end karir -->
+
+<!-- Kabar Alumni -->
+<section class="pb-3" style="background-color: #862480">
+  <div class="container alumni">
+    <div class="row">
+      <div class="col">
+        <div class="your-class pt-4">
+          <div>
+            <img src="assets/img/slide/3.jpg" class="rounded float-left" width="237" height="335" alt="...">
+          </div>
+          <div>
+            <img src="assets/img/slide/3.jpg" class="rounded float-left" width="237" height="335" alt="...">
+          </div>
+          <div>
+            <img src="assets/img/slide/3.jpg" class="rounded float-left" width="237" height="335" alt="...">
+          </div>
+          <div>
+            <img src="assets/img/slide/3.jpg" class="rounded float-left" width="237" height="335" alt="...">
+          </div>
+          <div>
+            <img src="assets/img/slide/3.jpg" class="rounded float-left" width="237" height="335" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End kabar Alumni -->
+
+<!-- Testimonial -->
+<div class="container mt-5"> 
+  <div class="row mb-4 text-center">
+    <div class="col-md">
+      <h4>TESTIMONIAL</h4>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="testi text-center">
+    <div>
+      <img src="assets/img/slide/3.jpg" alt="1" style="margin: auto;" class="rounded-circle mb-5 " width="150" height="150" >
+      <p class="mb-3 blockquote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sed omnis quidem quos quam vero minima aliquam incidunt consequuntur suscipit. Eaque iste itaque sit delectus natus odio. Incidunt, commodi, in."</p>
+    </div>
+
+    <div>
+      <img src="assets/img/slide/3.jpg" alt="1" style="margin: auto;" class="rounded-circle mb-5 " width="150" height="150" >
+      <p class="mb-3 blockquote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sed omnis quidem quos quam vero minima aliquam incidunt consequuntur suscipit. Eaque iste itaque sit delectus natus odio. Incidunt, commodi, in."</p>
+    </div>
+
+    <div>
+     <img src="assets/img/slide/3.jpg" alt="1" style="margin: auto;" class="rounded-circle mb-5 " width="150" height="150" >
+     <p class="mb-3 blockquote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sed omnis quidem quos quam vero minima aliquam incidunt consequuntur suscipit. Eaque iste itaque sit delectus natus odio. Incidunt, commodi, in."</p>
+   </div>
+ </div>
+</div>
+
+<!-- end Testimonial -->
+
+
+
+<!-- end footer -->
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Slick -->
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/slick/slick.min.js"></script>
+
+
+<script>  
+  $(document).ready(function(){
+    $('.your-class').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4
+    });
+    $('.testi').slick();
+  });
+
+</script>
 </body>
 </html>
